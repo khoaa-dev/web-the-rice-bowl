@@ -1,0 +1,8 @@
+.content .fa {
+    font-size: 30px;
+}
+
+.content .fa:hover {
+    font-size: 30px;
+    cursor: pointer;
+}
