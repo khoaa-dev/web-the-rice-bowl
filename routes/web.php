@@ -22,6 +22,8 @@ Route::get('/service/{id}', 'ServiceController@show');
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/menu', 'MenuController@index');
+
 
 Route::resource('/order', 'OrderController');
 
