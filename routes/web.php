@@ -19,6 +19,7 @@ Route::get('/offer-detail/{id}', 'PackageController@offerDetail');
 
 Route::get('/service', 'ServiceController@index');
 Route::get('/service/{id}', 'ServiceController@show');
+Route::get('/menu', 'MenuController@index');
 
 
 Route::resource('/order', 'OrderController');
