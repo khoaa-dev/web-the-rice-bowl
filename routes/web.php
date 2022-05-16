@@ -43,3 +43,12 @@ Route::post('/remove-food', 'FoodController@removeFood')->name('removeFood');
 Route::post('/init-session', 'FoodController@initSession')->name('initSession');
 
 Route::get('/update-menu', 'FoodController@updateMenu')->name('updateMenu');
+
+Route::get('/login-form', function () {
+    return view('auth.login');
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

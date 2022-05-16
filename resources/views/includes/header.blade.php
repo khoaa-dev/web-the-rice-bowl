@@ -14,12 +14,16 @@
                 <li class="nav-item"><a href="{{ url('service') }}" class="nav-link">Dịch vụ</a></li>
                 <li class="nav-item"><a href="{{ url('about') }}" class="nav-link">Về chúng tôi</a></li>
                 @guest
-                
-                    {{-- @if (Route::has('register'))
+                    <li class="nav-item">
+                        <!-- route('login') -->
+                        <a class="nav-link" href="">{{ __('Đăng nhập') }}</a>
+                    </li>
+
+                    <!-- @if (Route::has('register'))
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('register') }}">{{ __('Đăng ký') }}</a>
                         </li>
-                    @endif --}}
+                    @endif -->
                 @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
