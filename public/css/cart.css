@@ -1,0 +1,88 @@
+body {
+    /* font-family: "Lato", sans-serif; */
+    font-family: flaticon;
+    src: "../../public/front-end/fonts/flaticon/font/Flaticon.ttf";
+}
+
+#wrapper {
+    border: 1px solid #fac564;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+#checkout {
+    background-color: #fac564;
+    padding: 0 30px;
+}
+
+#infor span {
+    font-size: 17px !important;
+}
+
+#infor > span {
+    font-size: 17px !important;
+    /* color: aliceblue !important; */
+}
+
+.customer-address span {
+    font-size: 16px !important;
+}
+
+.title-r {
+    box-shadow: 0 4px 7px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 10%);
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.tt {
+    font-size: 16px !important;
+}
+
+.title-2 {
+    margin-top: 30px;
+}
+
+.prices ul li span {
+    font-size: 17px;
+}
+
+.prices__text {
+    font-weight: bold;
+    color: #081d31 !important;
+}
+
+#payment {
+    color: #e7ba28 !important;
+    background-color: #34495e;
+    height: 50px;
+    width: 300px;
+    font-size: 17px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-left: 14px;
+}
+
+#payment option {
+    color: #e7ba28 !important;
+    min-height: 80px;
+    height: 80px;
+}
+
+.cart__submit {
+    height: 50px;
+    width: 100%;
+    background-color: #34495e !important;
+    color: #e7ba28 !important;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.cart__submit:hover {
+    background-color: #425e7a !important;
+    color: #e7ba28 !important;
+    transition: 1s all;
+    cursor: pointer;
+}
