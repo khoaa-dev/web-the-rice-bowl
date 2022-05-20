@@ -41,6 +41,9 @@
                                     {{ __('Trang quản trị') }}
                                 </a>
                             @endif
+                            <a class="dropdown-item" href="{{ route('profile') }}">
+                                {{ __('Thông tin cá nhân') }}
+                            </a>
 
                            
 
