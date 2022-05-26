@@ -105,7 +105,10 @@
                                         <a href="{{ route('profile') }}">Thông tin cá nhân</a>
                                     </div>
 
-                                
+                                    <div class="history-order"
+                                    style="background-color: #2f3142; margin-top: 20px;border-radius: 5px">
+                                    <a href="{{ route('history') }}">Lịch sử đặt hàng</a>
+                                    </div>
                                 </div>
 
 

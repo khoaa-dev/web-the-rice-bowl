@@ -37,6 +37,8 @@ Route::post('/profile/update', 'UserController@updateInfor')->name('updateInfor'
 
 Route::get('/profile/infor', 'UserController@index')->name('profile');
 
+Route::get('/profile/history', 'UserController@history')->name('history');
+
 Route::post('/search', 'FoodController@getSearchAjax')->name('search');
 
 Route::post('/add-food', 'FoodController@addFood')->name('addFood');
@@ -50,6 +52,8 @@ Route::get('/update-menu', 'FoodController@updateMenu')->name('updateMenu');
 Route::post('/district', 'AddressController@getDistrict')->name('getDistrict');
 
 Route::post('/village', 'AddressController@getVillage')->name('getVillage');
+
+
 
 Route::get('/login-form', function () {
     return view('auth.login');
