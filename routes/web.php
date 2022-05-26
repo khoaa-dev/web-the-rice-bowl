@@ -63,3 +63,13 @@ Route::get('/login-form', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//admin
+Route::get('/admin/home', 'Admin\AdminController@index')->name('admin');
+
+//Order Management
+Route::get('/admin/orderManagement', 'Admin\OrderController@index')->name('orderManagement');
+
+Route::get('/admin/confirmOrder/{id}', 'Admin\OrderController@viewDetail');
+
+Route::post('/admin/confirmOrder/{id}', 'Admin\OrderController@confirmOrder');
