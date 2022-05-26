@@ -201,16 +201,18 @@
                                     <div class="d-flex text"
                                         style="margin-bottom: 35px; display: inline-block;width: 90%;">
                                         <img src="{{ asset($food->image) }}"
-                                            style=" border-radius: 100%;margin-top: -10px; height: 50px; width:50px;max-width: 50px; max-height: 50px;min-width: 50px; min-height: 50px;box-shadow: 0 4px 8px 0 rgba(192, 151, 16, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" />
+                                            style=" border-radius: 100%;margin-top: -10px; height: 50px; width:50px;max-width: 50px; max-height: 50px;min-width: 50px; min-height: 50px;box-shadow: 0 4px 8px 0 rgba(192, 151, 16, 0.2), 0 6px 20px 0 rgba(227, 217, 217, 0.19);" />
                                         &nbsp;&nbsp;
-                                        <h3 style="background: none; padding-top: 7px;">
-                                            <span style="color: rgb(231, 228, 212) !important; ">
+                                        <h3 style="padding-top: 7px;">
+                                            {{-- <span style="text-align: center">
                                                 {{ $food->name }}
-                                            </span>
+                                            </span> --}}
+                                            <p style="color: aliceblue">{{ $food->name }}</p>
                                         </h3>
-                                        <span class=" price"
+                                        {{-- <span class=" price"
                                             style="color: rgb(238, 222, 200); font-size: 18px !important">
-                                            {{ number_format($food->price, 0) }} đ </span>
+                                            {{ number_format($food->price, 0) }} đ </span> --}}
+                                        <p style="color: aliceblue; font-size: 18px; width: 80px">{{ number_format($food->price, 0) }} đ</p>
                                     </div>
                                     <div class="col-1"
                                         style="padding: 0px !important;padding-left: 20px !important;display: inline;padding-top: 8px !important;">
